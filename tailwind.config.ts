@@ -1,5 +1,4 @@
 import type { Config } from "tailwindcss";
-
 const config: Config = {
   content: ["./app/**/*.{js,ts,jsx,tsx,mdx}"],
   theme: {
@@ -7,14 +6,14 @@ const config: Config = {
       colors: {
         primary: "#2d4a3e",
         secondary: "#f9f5ef",
-        accent: "#a8c5a0",
+        accent: "#b87333"
       },
       fontFamily: {
         heading: ["var(--font-heading)"],
-        sans: ["var(--font-body)"],
-      },
-    },
+        sans: ["var(--font-body)"]
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 };
 export default config;
