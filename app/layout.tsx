@@ -12,14 +12,18 @@ const body = Inter({
 });
 
 export const metadata = {
-  title: 'Jommy Naturals | Purity in Every Drop',
-  description: 'Abuja\'s premier supplier of authentic organic raw materials.',
+  title: 'Jommy Naturals | Premium Raw Materials',
+  description: "Abuja's leading specialist supplier of authentic, organic raw materials.",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
-      <body className={`${heading.variable} ${body.variable} font-sans`}>
+      <body className={`${heading.variable} ${body.variable} font-sans bg-secondary text-primary`}>
         {children}
       </body>
     </html>
